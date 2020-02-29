@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amit Maity</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Github page of Amit Maity"/>
+    <meta name="keywords" content="amit maity, drupal, php, backend developer, headless web app"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/168f58cfc8.js"></script>
+
+    <style>
+
+        .profile-image {
+            height: 200px;
+            width: 200px;
+        }
+
+        .footer-color {
+            background-color: #e3f2fd !important;
+        }
+
+        .header-color {
+            background-color: #1e88e5 !important;
+        }
+    </style>
+</head>
+<body>
+<div class="jumbotron jumbotron-fluid text-center header-color" style="margin-bottom:0">
+    <h1 class="display-1 text-white">Amit Maity</h1>
+    <h4 class="text-white">Software Developer</h4>
+</div>
+<div class="container my-3">
+    <div class="row">
+        <div class="col-12 col-sm-4 text-center">
+            <h2>About Me</h2>
+            <img class="profile-image" src="images/amit.JPG">
+        </div>
+        <div class="col-12 col-sm-8">
+            <p class="mt-5">I am a Software Developer working mostly in Drupal. I am a Backend Developer. My experience
+                mostly revolves around developing the backend for headless web applications. I have worked on projects
+                like Travel Booking, Fantasy Games, Educational Planner and School Management Systems.
+            </p>
+            <p>Language and Technology proficiencies:</p>
+            <ul>
+                <li><strong>Language:</strong> PHP, JS, HTML, Shell</li>
+                <li><strong>Database:</strong> MySQL, MongoDB</li>
+                <li><strong>Version Control:</strong> Git</li>
+                <li><strong>Framework/CMS:</strong> Drupal, Laravel, Vue</li>
+            </ul>
+            <p id="experience"></p>
+
+        </div>
+    </div>
+</div>
+<div class="jumbotron jumbotron-fluid text-center footer-color" style="margin-bottom:0">
+    <a href="mailto:amitmaityofficial@outlook.com" target="_top">amitmaityofficial@outlook.com</a>
+    <div class="mt-4">
+        <a href="https://github.com/amitmaity" target="_blank"><i class="fa fa-github-square fa-2x mx-4"
+                                                                  aria-hidden="true"></i></a>
+        <a href="https://twitter.com/amitmaitycool" target="_blank"><i class="fa fa-twitter-square fa-2x mx-4"
+                                                                       aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/amit-maity/" target="_blank"><i class="fa fa-linkedin-square fa-2x mx-4"
+                                                                             aria-hidden="true"></i></a>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+  let date1 = new Date('01/01/2016')
+  let date2 = new Date()
+
+  // To calculate the time difference of two dates
+  let Difference_In_Time = date2.getTime() - date1.getTime()
+
+  // To calculate the no. of days between two dates
+  let Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24)
+  let days = Math.round(Difference_In_Days)
+  let years = Math.floor(days / 365)
+  let months = Math.round((days - (365 * years)) / 30)
+  let experience = 'I have total experience of ' + years + ' years and ' + months + ' months'
+  document.getElementById('experience').innerText = experience
+
+</script>
+</html>
