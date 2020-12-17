@@ -57,7 +57,7 @@
         </div>
     </div>
 </div>
-<div class="jumbotron jumbotron-fluid text-center footer-color" style="margin-bottom:0">
+<div class="jumbotron jumbotron-fluid text-center footer-color" style="margin-bottom:0;min-height: 500px">
     <a href="mailto:amitmaityofficial@outlook.com" target="_top">amitmaityofficial@outlook.com</a>
     <div class="mt-4">
         <a href="https://github.com/amitmaity" target="_blank"><i class="fa fa-github-square fa-2x mx-4"
@@ -80,7 +80,7 @@
   let Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24)
   let days = Math.round(Difference_In_Days)
   let years = Math.floor(days / 365)
-  let months = Math.round((days - (365 * years)) / 30)
+  let months = Math.floor((days - (365 * years)) / 30)
   let experience = 'I have total experience of ' + years + ' years and ' + months + ' months'
   document.getElementById('experience').innerText = experience
 
